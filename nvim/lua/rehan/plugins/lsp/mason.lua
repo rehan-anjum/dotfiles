@@ -5,8 +5,8 @@ return {
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
 	},
 	config = function()
-		-- import mason 
-        local mason = require("mason")
+		-- import mason
+		local mason = require("mason")
 		-- import mason-lspconfig
 		local mason_lspconfig = require("mason-lspconfig")
 
@@ -35,6 +35,8 @@ return {
 				"emmet_ls",
 				"prismals",
 				"pyright",
+				"kotlin_language_server",
+				"clangd",
 			},
 		})
 
@@ -46,6 +48,7 @@ return {
 				"black", -- python formatter
 				"pylint",
 				"eslint_d",
+				"ktlint",
 			},
 		})
 	end,
