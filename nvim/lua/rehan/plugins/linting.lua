@@ -12,6 +12,8 @@ return {
 			svelte = { "eslint_d" },
 			python = { "pylint" },
 			kotlin = { "ktlint" },
+			cpp = { "cppcheck" },
+			c = { "clangtidy" },
 		}
 
 		local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })

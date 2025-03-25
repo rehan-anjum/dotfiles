@@ -48,6 +48,7 @@ return {
 				"cpp",
 				"python",
 				"kotlin",
+				"latex",
 			},
 			incremental_selection = {
 				enable = true,

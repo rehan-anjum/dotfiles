@@ -24,6 +24,8 @@ return {
 		})
 
 		mason_lspconfig.setup({
+			-- default handler for installed servers
+			automatic_installation = true,
 			-- list of servers for mason to install
 			ensure_installed = {
 				"html",
