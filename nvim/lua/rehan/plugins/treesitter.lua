@@ -13,6 +13,8 @@ return {
 		treesitter.setup({ -- enable syntax highlighting
 			highlight = {
 				enable = true,
+				-- vimtex does its own latex highlighting
+				disable = { "latex" },
 			},
 			build = {
 				":TSUpdate",

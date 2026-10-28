@@ -13,6 +13,10 @@ return {
 	config = function()
 		-- Viewer
 		vim.g.vimtex_view_method = "zathura"
+		-- xdotool (used by the zathura viewer) doesn't work under Wayland
+		if vim.env.WAYLAND_DISPLAY then
+			vim.g.vimtex_view_method = "zathura_simple"
+		end
 
 		-- Compiler (latexmk, continuous)
 		vim.g.vimtex_compiler_method = "latexmk"

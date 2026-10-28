@@ -1,0 +1,6 @@
+# matches the catppuccin flavor in tmux/.tmux.conf
+theme = Catppuccin Macchiato
+
+font-size = 13
+window-padding-x = 6
+window-padding-y = 6
